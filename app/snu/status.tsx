@@ -29,7 +29,7 @@ export default function SNUState() {
           서울대학교 입학처 바로가기
         </Link>
       )}
-      <p className={"text-sm"}>{state}</p>
+      <p>업데이트: {state}</p>
     </>
   );
 }

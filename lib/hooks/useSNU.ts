@@ -16,7 +16,7 @@ export default function useSNU() {
         minute: "numeric", // 분 표시 (두 자리)
         second: "numeric", // 초 표시 (두 자리)
       }).format(now);
-      setUpdate(`업데이트: ${formattedTime}`);
+      setUpdate(formattedTime);
     },
   });
 
