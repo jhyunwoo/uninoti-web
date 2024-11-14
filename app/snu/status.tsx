@@ -19,7 +19,11 @@ export default function SNUState() {
           현재 상태: {snuData?.result ? "발표" : "미발표"}
         </div>
       )}
-      {snuError && <div className={"text-red-500"}>에러 발생!</div>}
+      {snuError || snuData?.result === "Error" ? (
+        <div className={"text-red-500"}>에러 발생!</div>
+      ) : (
+        ""
+      )}
       {snuData?.result && (
         <Link
           href={"https://admission.snu.ac.kr/undergraduate/notice"}
