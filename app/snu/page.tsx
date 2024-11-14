@@ -1,5 +1,11 @@
 import Image from "next/image";
 import SNUState from "@/app/snu/status";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "서울대 학종 1차 발표",
+  description: "서울대학교 학생부종합전형 1단계 합격자 발표 상태",
+};
 
 export default function SNUPage() {
   return (
@@ -14,7 +20,7 @@ export default function SNUPage() {
           />
           <div className={"text-xl lg:text-2xl font-bold"}>
             서울대학교 학생부종합전형 <br />
-            1차 합격자 발표
+            1단계 합격자 발표
           </div>
         </div>
         <SNUState />
