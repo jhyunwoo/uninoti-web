@@ -13,7 +13,9 @@ export default function SNUState() {
       {snuIsLoading ? (
         <div>업데이트 중...</div>
       ) : (
-        <div className={"font-semibold text-lg"}>
+        <div
+          className={`${snuData?.result ? "font-bold text-xl text-red-600" : "font-semibold text-lg"}`}
+        >
           현재 상태: {snuData?.result ? "발표" : "미발표"}
         </div>
       )}
