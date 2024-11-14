@@ -2,9 +2,12 @@
 
 import useSNU from "@/lib/hooks/useSNU";
 import Link from "next/link";
+import { useUpdate } from "@/lib/stores/update";
 
 export default function SNUState() {
-  const { snuData, snuIsLoading } = useSNU();
+  const { snuData, snuIsLoading, snuError } = useSNU();
+  const { state } = useUpdate((state) => state);
+
   return (
     <>
       {snuIsLoading ? (
@@ -14,6 +17,7 @@ export default function SNUState() {
           현재 상태: {snuData?.result ? "발표" : "미발표"}
         </div>
       )}
+      {snuError && <div className={"text-red-500"}>에러 발생!</div>}
       {snuData?.result && (
         <Link
           href={"https://admission.snu.ac.kr/undergraduate/notice"}
@@ -25,6 +29,7 @@ export default function SNUState() {
           서울대학교 입학처 바로가기
         </Link>
       )}
+      <p className={"text-sm"}>{state}</p>
     </>
   );
 }

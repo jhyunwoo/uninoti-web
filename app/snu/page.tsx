@@ -18,7 +18,6 @@ export default function SNUPage() {
           </div>
         </div>
         <SNUState />
-        <p className={"text-sm"}>1초마다 업데이트 중...</p>
       </div>
     </div>
   );

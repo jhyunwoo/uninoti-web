@@ -3,9 +3,9 @@ import Image from "next/image";
 
 export default function HomePage() {
   return (
-    <div className={"w-screen h-screen flex items-center justify-center"}>
+    <div className={"w-screen h-screen flex items-center justify-center p-4"}>
       <div className={"flex flex-col items-center justify-center gap-4"}>
-        <h1 className={"text-4xl font-extrabold"}>
+        <h1 className={"text-2xl lg:text-4xl font-extrabold"}>
           유니노티 - 대학교 합격자 발표 알림
         </h1>
         <div className={"flex gap-2 items-center"}>
@@ -21,7 +21,9 @@ export default function HomePage() {
               width={100}
               height={100}
             />
-            <p className={"text-2xl font-semibold p-4"}>서울대학교</p>
+            <p className={"text-lg lg:text-2xl font-semibold p-4"}>
+              서울대학교
+            </p>
           </Link>
         </div>
       </div>
