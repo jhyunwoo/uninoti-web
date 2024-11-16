@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import { ReactNode } from "react";
+import Footer from "@/app/components/footer";
 
 export const metadata: Metadata = {
   title: "유니노티",
@@ -14,8 +15,11 @@ export default function RootLayout({
   children: ReactNode;
 }>) {
   return (
-    <html lang="ko" className={"bg-neutral-50"}>
-      <body>{children}</body>
+    <html lang="ko" className={"bg-neutral-100"}>
+      <body>
+        {children}
+        <Footer />
+      </body>
       <GoogleAnalytics gaId={"G-YSJCZMZVX9"} />
     </html>
   );

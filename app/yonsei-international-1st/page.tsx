@@ -1,0 +1,49 @@
+import Image from "next/image";
+import { Metadata } from "next";
+import Link from "next/link";
+import { ChevronLeftIcon } from "@heroicons/react/24/outline";
+import AdmissionState from "@/app/components/status";
+
+export const metadata: Metadata = {
+  title: "연세대 학종 국제형 1단계 발표 상태",
+  description: "연세대학교 학생부종합전형 국제형 1단계 합격자 발표 상태",
+};
+
+export default function YonseiIntl1st() {
+  return (
+    <div className={"w-screen h-screen flex items-center justify-center p-4"}>
+      <Link
+        href={"/"}
+        className={
+          "fixed top-4 lg:top-8 lg:left-8 left-4 hover:underline flex items-center gap-2"
+        }
+      >
+        <ChevronLeftIcon className={"size-6"} />
+        <p>홈 화면</p>
+      </Link>
+      <div className={"admission-card"}>
+        <div className={"flex items-center gap-4"}>
+          <Image
+            src={"/yonsei.svg"}
+            alt={"연세대학교 로고"}
+            width={100}
+            height={100}
+          />
+          <div className={"text-xl lg:text-2xl font-bold"}>
+            연세대학교 학생부종합전형 <br />
+            (국제형)
+            <br />
+            1단계 합격자 발표
+          </div>
+        </div>
+        <AdmissionState
+          api={"https://api.uninoti.moveto.kr/yonsei-international-1st"}
+          title={"연세대학교 입학처 바로가기"}
+          link={
+            "https://admission.yonsei.ac.kr/seoul/admission/html/main/main.asp"
+          }
+        />
+      </div>
+    </div>
+  );
+}

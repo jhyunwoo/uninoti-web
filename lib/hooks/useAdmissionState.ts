@@ -2,11 +2,12 @@ import useSWR from "swr";
 import fetcher from "@/lib/fetcher";
 import { useUpdate } from "@/lib/stores/update";
 
-export default function useSNU() {
+export default function useAdmissionState(url: string) {
   const { setUpdate } = useUpdate((state) => state);
   const { data, error, isLoading, mutate } = useSWR<{
-    result: boolean | string;
-  }>("https://api.uninoti.moveto.kr/snu", fetcher, {
+    title: string;
+    state: boolean | string;
+  }>(url, fetcher, {
     refreshInterval: 100,
     onSuccess: () => {
       const now = new Date();
@@ -21,9 +22,9 @@ export default function useSNU() {
   });
 
   return {
-    snuData: data,
-    snuError: error,
-    snuIsLoading: isLoading,
-    mutateSnu: mutate,
+    data,
+    error,
+    isLoading,
+    mutate,
   };
 }
