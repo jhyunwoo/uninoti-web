@@ -5,5 +5,5 @@ export default function getDDay(year: number, month: number, day: number) {
 
   const targetDate = new Date(year, month - 1, day);
 
-  return differenceInDays(targetDate, today) + 1;
+  return differenceInDays(targetDate, today);
 }
