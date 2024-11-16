@@ -67,7 +67,7 @@ export default function HomePage() {
             href={"https://www.moveto.kr"}
             target={"_blank"}
             className={
-              "lg:col-span-2 p-4 rounded-xl bg-neutral-900 text-white flex items-center gap-2 justify-center shadow-lg shadow-neutral-500"
+              "md:col-span-2 p-4 rounded-xl bg-neutral-900 text-white flex items-center gap-2 justify-center shadow-lg shadow-neutral-500"
             }
           >
             <p className={"text-lg font-semibold"}>
