@@ -63,6 +63,19 @@ export default function HomePage() {
               (국제형)
             </p>
           </AdmissionButton>
+          <AdmissionButton href={"/korea-gaejuck-final"}>
+            <Image
+              src={"/korea.svg"}
+              alt={"고려대학교 로고"}
+              width={80}
+              height={80}
+            />
+            <p className={"text-lg lg:text-2xl font-semibold p-4"}>
+              고려대학교 <br />
+              계열적합, 고른기회, 재직자전형{" "}
+              <span className={"text-sm text-red-500"}>Beta</span>
+            </p>
+          </AdmissionButton>
           <Link
             href={"https://www.moveto.kr"}
             target={"_blank"}
