@@ -42,7 +42,7 @@ export default function KoreaGaejuckFinal() {
           api={"https://api.uninoti.moveto.kr/korea-gaejuck-final"}
           title={"고려대학교 입학처 바로가기"}
           link={
-            "https://admission.yonsei.ac.kr/seoul/admission/html/main/main.asp"
+            "https://oku.korea.ac.kr/oku/cms/FR_CON/index.do?MENU_ID=750&CONTENTS_NO=1"
           }
         />
       </div>
