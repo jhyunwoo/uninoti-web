@@ -1,9 +1,6 @@
-import { differenceInDays } from "date-fns";
-
 export default function getDDay(year: number, month: number, day: number) {
   const today = new Date();
   const targetDate = new Date(year, month - 1, day);
-  console.log(today, targetDate);
 
-  return differenceInDays(targetDate, today);
+  return targetDate.getDate() - today.getDate();
 }

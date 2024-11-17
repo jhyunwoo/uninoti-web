@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import { ChevronLeftIcon } from "@heroicons/react/24/outline";
 import AdmissionState from "@/app/components/status";
-import getDDay from "@/lib/get-d-day";
+import DDay from "@/app/components/d-day";
 
 export const metadata: Metadata = {
   title: "서울대 학종 지균 1단계 발표 상태",
@@ -23,9 +23,7 @@ export default function SnuJigyun1st() {
         <p>홈 화면</p>
       </Link>
       <div className={"admission-card"}>
-        <div className={"text-lg font-semibold"}>
-          D-{getDDay(2024, 11, 22) ? getDDay(2024, 11, 22) : "Day"}
-        </div>
+        <DDay year={2024} month={11} day={22} />
         <div className={"flex items-center gap-4"}>
           <Image
             src={"/snu.svg"}
