@@ -24,7 +24,7 @@ export default function SnuJigyun1st() {
       </Link>
       <div className={"admission-card"}>
         <div className={"text-lg font-semibold"}>
-          D-{getDDay(2024, 11, 18) ? getDDay(2024, 11, 22) : "Day"}
+          D-{getDDay(2024, 11, 22) ? getDDay(2024, 11, 22) : "Day"}
         </div>
         <div className={"flex items-center gap-4"}>
           <Image
