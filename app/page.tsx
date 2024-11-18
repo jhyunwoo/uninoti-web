@@ -71,7 +71,7 @@ export default function HomePage() {
               height={100}
             />
             <p className={"text-lg lg:text-2xl font-semibold p-4"}>
-              연세대학교 특기자[국제인재]
+              연세대학교 특기자[국제인재] UD
               <br />
               최종합격자 발표
             </p>
