@@ -33,8 +33,7 @@ export default function YonseiIntl1st() {
             height={100}
           />
           <div className={"text-xl lg:text-2xl font-bold"}>
-            연세대학교 학생부종합전형 <br />
-            (국제형)
+            연세대학교 <br /> 학생부종합전형 (국제형)
             <br />
             1단계 합격자 발표
           </div>
