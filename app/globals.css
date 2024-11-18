@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @layer components {
-    .admission-card {
-        @apply flex flex-col items-center gap-4 w-full p-4 lg:p-8 rounded-2xl shadow-2xl max-w-xl bg-white;
-    }
+  .admission-card {
+    @apply flex flex-col items-center gap-4 w-full p-4 lg:p-8 rounded-2xl shadow-2xl max-w-xl bg-white;
+  }
 }

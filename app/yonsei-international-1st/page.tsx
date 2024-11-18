@@ -1,14 +1,14 @@
-import Image from "next/image";
-import { Metadata } from "next";
-import Link from "next/link";
-import { ChevronLeftIcon } from "@heroicons/react/24/outline";
-import AdmissionState from "@/app/components/status";
-import DDay from "@/app/components/d-day";
+import Image from "next/image"
+import { Metadata } from "next"
+import Link from "next/link"
+import { ChevronLeftIcon } from "@heroicons/react/24/outline"
+import AdmissionState from "@/app/components/status"
+import DDay from "@/app/components/d-day"
 
 export const metadata: Metadata = {
   title: "연세대 학종 국제형 1단계 발표 상태",
   description: "연세대학교 학생부종합전형 국제형 1단계 합격자 발표 상태",
-};
+}
 
 export default function YonseiIntl1st() {
   return (
@@ -48,5 +48,5 @@ export default function YonseiIntl1st() {
         />
       </div>
     </div>
-  );
+  )
 }

@@ -1,14 +1,14 @@
-import Link from "next/link";
-import Image from "next/image";
-import { ReactNode } from "react";
-import { ChevronRightIcon } from "@heroicons/react/24/outline";
+import Link from "next/link"
+import Image from "next/image"
+import { ReactNode } from "react"
+import { ChevronRightIcon } from "@heroicons/react/24/outline"
 
 function AdmissionButton({
   href,
   children,
 }: {
-  href: string;
-  children: ReactNode;
+  href: string
+  children: ReactNode
 }) {
   return (
     <Link
@@ -19,7 +19,7 @@ function AdmissionButton({
     >
       {children}
     </Link>
-  );
+  )
 }
 
 export default function HomePage() {
@@ -104,5 +104,5 @@ export default function HomePage() {
         </div>
       </div>
     </div>
-  );
+  )
 }

@@ -7,5 +7,5 @@ export default function Footer() {
         <div>Contact: jhyunwoo@yonsei.ac.kr</div>
       </div>
     </div>
-  );
+  )
 }

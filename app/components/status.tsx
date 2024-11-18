@@ -1,20 +1,20 @@
-"use client";
+"use client"
 
-import { useUpdate } from "@/lib/stores/update";
-import useAdmissionState from "@/lib/hooks/useAdmissionState";
-import Link from "next/link";
+import { useUpdate } from "@/lib/stores/update"
+import useAdmissionState from "@/lib/hooks/useAdmissionState"
+import Link from "next/link"
 
 export default function AdmissionState({
   title,
   link,
   api,
 }: {
-  title: string;
-  link: string;
-  api: string;
+  title: string
+  link: string
+  api: string
 }) {
-  const { data, isLoading, error } = useAdmissionState(api);
-  const { state } = useUpdate((state) => state);
+  const { data, isLoading, error } = useAdmissionState(api)
+  const { state } = useUpdate((state) => state)
 
   return (
     <>
@@ -45,5 +45,5 @@ export default function AdmissionState({
       )}
       <p>업데이트: {state}</p>
     </>
-  );
+  )
 }

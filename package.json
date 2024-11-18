@@ -20,15 +20,15 @@
     "zustand": "^5.0.1"
   },
   "devDependencies": {
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "eslint": "^8",
+    "@types/node": "^22.9.0",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "eslint": "^9.15.0",
     "eslint-config-next": "15.0.3",
-    "postcss": "^8",
+    "postcss": "^8.4.49",
     "prettier": "^3.3.3",
-    "tailwindcss": "^3.4.1",
-    "typescript": "^5"
+    "tailwindcss": "^3.4.15",
+    "typescript": "^5.6.3"
   },
   "packageManager": "yarn@4.5.1"
 }

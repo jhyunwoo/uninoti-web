@@ -1,14 +1,14 @@
-import Image from "next/image";
-import { Metadata } from "next";
-import Link from "next/link";
-import { ChevronLeftIcon } from "@heroicons/react/24/outline";
-import AdmissionState from "@/app/components/status";
-import DDay from "@/app/components/d-day";
+import Image from "next/image"
+import { Metadata } from "next"
+import Link from "next/link"
+import { ChevronLeftIcon } from "@heroicons/react/24/outline"
+import AdmissionState from "@/app/components/status"
+import DDay from "@/app/components/d-day"
 
 export const metadata: Metadata = {
   title: "고려대 계적, 고른기회, 재직자 최종합격자 발표 상태",
   description: "고려대학교 계열적합, 고른기회, 재직자전형 최종합격자 발표 상태",
-};
+}
 
 export default function KoreaGaejuckFinal() {
   return (
@@ -47,5 +47,5 @@ export default function KoreaGaejuckFinal() {
         />
       </div>
     </div>
-  );
+  )
 }

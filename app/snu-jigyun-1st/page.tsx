@@ -1,14 +1,14 @@
-import Image from "next/image";
-import { Metadata } from "next";
-import Link from "next/link";
-import { ChevronLeftIcon } from "@heroicons/react/24/outline";
-import AdmissionState from "@/app/components/status";
-import DDay from "@/app/components/d-day";
+import Image from "next/image"
+import { Metadata } from "next"
+import Link from "next/link"
+import { ChevronLeftIcon } from "@heroicons/react/24/outline"
+import AdmissionState from "@/app/components/status"
+import DDay from "@/app/components/d-day"
 
 export const metadata: Metadata = {
   title: "서울대 학종 지균 1단계 발표 상태",
   description: "서울대학교 학생부종합전형 지역균형전형 1단계 합격자 발표 상태",
-};
+}
 
 export default function SnuJigyun1st() {
   return (
@@ -45,5 +45,5 @@ export default function SnuJigyun1st() {
         />
       </div>
     </div>
-  );
+  )
 }
