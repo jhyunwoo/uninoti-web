@@ -63,6 +63,19 @@ export default function HomePage() {
               (국제형)
             </p>
           </AdmissionButton>
+          <AdmissionButton href={"/yonsei-talent-international-final"}>
+            <Image
+              src={"/yonsei.svg"}
+              alt={"연세대학교 로고"}
+              width={100}
+              height={100}
+            />
+            <p className={"text-lg lg:text-2xl font-semibold p-4"}>
+              연세대학교 특기자[국제인재]
+              <br />
+              최종합격자 발표
+            </p>
+          </AdmissionButton>
           <AdmissionButton href={"/korea-gaejuck-final"}>
             <Image
               src={"/korea.svg"}
