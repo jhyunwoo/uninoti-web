@@ -47,7 +47,8 @@ export default function HomePage() {
               height={100}
             />
             <p className={"text-lg lg:text-2xl font-semibold p-4"}>
-              서울대학교 학생부종합전형 <br />
+              서울대학교
+              <br /> 학생부종합전형 <br />
               (지역균형전형)
             </p>
           </AdmissionButton>
@@ -59,7 +60,8 @@ export default function HomePage() {
               height={100}
             />
             <p className={"text-lg lg:text-2xl font-semibold p-4"}>
-              연세대학교 학생부종합전형 <br />
+              연세대학교
+              <br /> 학생부종합전형 <br />
               (국제형)
             </p>
           </AdmissionButton>
@@ -71,7 +73,8 @@ export default function HomePage() {
               height={100}
             />
             <p className={"text-lg lg:text-2xl font-semibold p-4"}>
-              연세대학교 특기자[국제인재] UD
+              연세대학교
+              <br /> 특기자[국제인재] UD
               <br />
               최종합격자 발표
             </p>

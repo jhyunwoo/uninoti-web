@@ -32,7 +32,8 @@ export default function YonseiIntl1st() {
             height={100}
           />
           <div className={"text-xl lg:text-2xl font-bold"}>
-            연세대학교 특기자[국제인재] UD
+            연세대학교
+            <br /> 특기자[국제인재] UD
             <br />
             최종합격자 발표
           </div>
