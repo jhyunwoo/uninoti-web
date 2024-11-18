@@ -10,9 +10,11 @@ export const metadata: Metadata = {
   description: "연세대학교 특기자전형 [국제인재] 최종합격자 발표 상태",
 }
 
-export default function YonseiIntl1st() {
+export default function YonseiTalentIntlFinal() {
   return (
-    <div className={"w-screen h-screen flex items-center justify-center p-4"}>
+    <div
+      className={"w-screen min-h-screen flex items-center justify-center p-4"}
+    >
       <Link
         href={"/"}
         className={

@@ -12,7 +12,9 @@ export const metadata: Metadata = {
 
 export default function YonseiIntl1st() {
   return (
-    <div className={"w-screen h-screen flex items-center justify-center p-4"}>
+    <div
+      className={"w-screen min-h-screen flex items-center justify-center p-4"}
+    >
       <Link
         href={"/"}
         className={
