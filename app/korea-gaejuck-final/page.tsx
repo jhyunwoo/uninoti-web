@@ -35,7 +35,8 @@ export default function KoreaGaejuckFinal() {
             height={80}
           />
           <div className={"text-lg lg:text-xl font-bold"}>
-            고려대학교 계열적합, 고른기회, 재직자전형
+            고려대학교
+            <br /> 계열적합, 고른기회, 재직자전형
             <br />
             최종합격자 발표
           </div>
