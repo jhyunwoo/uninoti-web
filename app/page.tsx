@@ -24,7 +24,9 @@ function AdmissionButton({
 
 export default function HomePage() {
   return (
-    <div className={"w-screen h-screen flex items-center justify-center p-4"}>
+    <div
+      className={"w-screen min-h-screen flex items-center justify-center p-4"}
+    >
       <div className={"flex flex-col items-center justify-center gap-4"}>
         <div className={"flex flex-col items-center px-4"}>
           <h1 className={"text-2xl lg:text-4xl font-extrabold p-4"}>
