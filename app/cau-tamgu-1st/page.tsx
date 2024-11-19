@@ -31,8 +31,8 @@ export default function CauTamgu1st() {
           <Image
             src={"/cau.svg"}
             alt={"중앙대학교 로고"}
-            width={80}
-            height={80}
+            width={100}
+            height={100}
           />
           <div className={"text-lg lg:text-xl font-bold"}>
             중앙대학교
