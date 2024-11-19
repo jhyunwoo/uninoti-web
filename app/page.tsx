@@ -94,6 +94,18 @@ export default function HomePage() {
               <span className={"text-sm text-red-500"}>Beta</span>
             </p>
           </AdmissionButton>
+          <AdmissionButton href={"/cau-tamgu-1st"}>
+            <Image
+              src={"/cau.svg"}
+              alt={"중앙대학교 로고"}
+              width={100}
+              height={100}
+            />
+            <p className={"text-lg lg:text-2xl font-semibold p-4"}>
+              중앙대학교 <br />
+              학생부종합전형[탐구형]
+            </p>
+          </AdmissionButton>
           <Link
             href={"https://www.moveto.kr"}
             target={"_blank"}
