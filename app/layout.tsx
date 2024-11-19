@@ -6,7 +6,8 @@ import Footer from "@/app/components/footer"
 
 export const metadata: Metadata = {
   title: "유니노티",
-  description: "대학교 합격자 발표 알림 서비스. 서울대학교 수시 합격 발표 알림",
+  description:
+    "대학교 합격자 발표 알림 서비스. 서울대, 연세대, 고려대, 중앙대 수시 합격 발표 알림",
   metadataBase: new URL("https://uninoti.moveto.kr"),
 }
 
