@@ -12,8 +12,16 @@ export default function DDay({
   day: number
 }) {
   return (
-    <div className={"text-lg font-semibold"}>
-      D-{getDDay(year, month, day) ? getDDay(year, month, day) : "Day"}
-    </div>
+    <>
+      {getDDay(year, month, day) >= 0 ? (
+        <div className={"text-lg font-semibold"}>
+          D-{getDDay(year, month, day) ? getDDay(year, month, day) : "Day"}
+        </div>
+      ) : (
+        <div className={"text-lg font-semibold"}>
+          D+{-getDDay(year, month, day)}
+        </div>
+      )}
+    </>
   )
 }
