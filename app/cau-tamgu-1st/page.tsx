@@ -44,7 +44,9 @@ export default function CauTamgu1st() {
         <AdmissionState
           api={"https://api.uninoti.moveto.kr/cau-tamgu-1st"}
           title={"중앙대학교 입학처 바로가기"}
-          link={"https://admission.cau.ac.kr/main.do"}
+          link={
+            "https://campus.cau.ac.kr/servlet/UihCon40?e_gubun=86B541A1AE5CBB37C79711B247B84313&e_pretest="
+          }
         />
       </div>
     </div>
