@@ -52,6 +52,30 @@ export default function HomePage() {
             지원 대학 전형
           </div>
           <div className={"grid grid-cols-1 md:grid-cols-2 gap-4"}>
+            <AdmissionButton href={"/hanyang-final"}>
+              <Image
+                src={"/hanyang.svg"}
+                alt={"한양대학교 로고"}
+                width={100}
+                height={100}
+              />
+              <p className={"text-lg lg:text-2xl font-semibold p-4"}>
+                한양대학교 <br />
+                학생부종합전형
+              </p>
+            </AdmissionButton>
+            <AdmissionButton href={"/sogang-final"}>
+              <Image
+                src={"/sogang.svg"}
+                alt={"서강대학교 로고"}
+                width={100}
+                height={100}
+              />
+              <p className={"text-lg lg:text-2xl font-semibold p-4"}>
+                서강대학교 <br />
+                학생부종합전형
+              </p>
+            </AdmissionButton>
             <AdmissionButton href={"/snu-jigyun-1st"}>
               <Image
                 src={"/snu.svg"}
