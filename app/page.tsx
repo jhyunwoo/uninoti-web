@@ -29,8 +29,12 @@ export default function HomePage() {
         "w-screen min-h-screen flex flex-col items-center justify-center p-4"
       }
     >
-      <div className={"w-full h-[33vh]"} />
-      <div className={"flex flex-col items-center justify-center gap-4"}>
+      <div className={"w-full h-[20vh]"} />
+      <div
+        className={
+          "flex flex-col items-center justify-center gap-4 w-full max-w-4xl"
+        }
+      >
         <div className={"flex flex-col items-center p-8"}>
           <h1
             className={"text-2xl lg:text-4xl font-extrabold p-4 tracking-wide"}
@@ -45,13 +49,13 @@ export default function HomePage() {
             주의: 발표 정보가 정확하지 않을 수 있습니다.
           </p>
         </div>
-        <div className={"flex flex-col gap-4"}>
+        <div className={"flex flex-col gap-4 w-full"}>
           <div
             className={"font-semibold text-lg border-b-2 border-neutral-300"}
           >
             지원 대학 전형
           </div>
-          <div className={"grid grid-cols-1 md:grid-cols-2 gap-4"}>
+          <div className={"grid grid-cols-1 md:grid-cols-2 gap-4 w-full"}>
             <AdmissionButton href={"/snu-final"}>
               <Image
                 src={"/snu.svg"}
@@ -80,8 +84,8 @@ export default function HomePage() {
               <Image
                 src={"/korea.svg"}
                 alt={"고려대학교 로고"}
-                width={100}
-                height={100}
+                width={80}
+                height={80}
               />
               <p className={"text-lg lg:text-2xl font-semibold p-4"}>
                 고려대학교 <br />

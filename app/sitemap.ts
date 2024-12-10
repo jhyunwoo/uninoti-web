@@ -9,6 +9,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
     },
     {
+      url: "https://uninoti.moveto.kr/snu-final",
+      lastModified: new Date(),
+      changeFrequency: "daily",
+      priority: 0.9,
+    },
+    {
+      url: "https://uninoti.moveto.kr/yonsei-final",
+      lastModified: new Date(),
+      changeFrequency: "daily",
+      priority: 0.9,
+    },
+    {
+      url: "https://uninoti.moveto.kr/korea-final",
+      lastModified: new Date(),
+      changeFrequency: "daily",
+      priority: 0.9,
+    },
+    {
       url: "https://uninoti.moveto.kr/hanyang-final",
       lastModified: new Date(),
       changeFrequency: "daily",
