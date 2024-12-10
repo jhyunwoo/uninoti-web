@@ -6,8 +6,8 @@ import AdmissionState from "@/app/components/status"
 import DDay from "@/app/components/d-day"
 
 export const metadata: Metadata = {
-  title: "한양대 학종 최종합격자 발표 상태",
-  description: "한양대학교 학생부종합전형 최초합격자 발표 상태",
+  title: "한양대 수시 최종합격자 발표 상태",
+  description: "한양대학교 수시 최초합격자 발표 상태",
 }
 
 export default function HanyangFinal() {
@@ -36,7 +36,7 @@ export default function HanyangFinal() {
           />
           <div className={"text-lg lg:text-xl font-bold"}>
             한양대학교
-            <br /> 학생부종합전형
+            <br /> 수시
             <br /> 최종합격자 발표
           </div>
         </div>

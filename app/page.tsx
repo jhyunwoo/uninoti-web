@@ -52,6 +52,42 @@ export default function HomePage() {
             지원 대학 전형
           </div>
           <div className={"grid grid-cols-1 md:grid-cols-2 gap-4"}>
+            <AdmissionButton href={"/snu-final"}>
+              <Image
+                src={"/snu.svg"}
+                alt={"서울대학교 로고"}
+                width={100}
+                height={100}
+              />
+              <p className={"text-lg lg:text-2xl font-semibold p-4"}>
+                서울대학교 <br />
+                수시 최종합격자
+              </p>
+            </AdmissionButton>
+            <AdmissionButton href={"/yonsei-final"}>
+              <Image
+                src={"/yonsei.svg"}
+                alt={"연세대학교 로고"}
+                width={100}
+                height={100}
+              />
+              <p className={"text-lg lg:text-2xl font-semibold p-4"}>
+                연세대학교 <br />
+                수시 최종합격자
+              </p>
+            </AdmissionButton>
+            <AdmissionButton href={"/korea-final"}>
+              <Image
+                src={"/korea.svg"}
+                alt={"고려대학교 로고"}
+                width={100}
+                height={100}
+              />
+              <p className={"text-lg lg:text-2xl font-semibold p-4"}>
+                고려대학교 <br />
+                수시 최종합격자
+              </p>
+            </AdmissionButton>
             <AdmissionButton href={"/hanyang-final"}>
               <Image
                 src={"/hanyang.svg"}
@@ -61,7 +97,7 @@ export default function HomePage() {
               />
               <p className={"text-lg lg:text-2xl font-semibold p-4"}>
                 한양대학교 <br />
-                학생부종합전형
+                수시 최종합격자
               </p>
             </AdmissionButton>
             <AdmissionButton href={"/sogang-final"}>
@@ -73,71 +109,7 @@ export default function HomePage() {
               />
               <p className={"text-lg lg:text-2xl font-semibold p-4"}>
                 서강대학교 <br />
-                학생부종합전형
-              </p>
-            </AdmissionButton>
-            <AdmissionButton href={"/snu-jigyun-1st"}>
-              <Image
-                src={"/snu.svg"}
-                alt={"서울대학교 로고"}
-                width={100}
-                height={100}
-              />
-              <p className={"text-lg lg:text-2xl font-semibold p-4"}>
-                서울대학교
-                <br /> 학생부종합전형 <br />
-                (지역균형전형)
-              </p>
-            </AdmissionButton>
-            <AdmissionButton href={"/yonsei-international-1st"}>
-              <Image
-                src={"/yonsei.svg"}
-                alt={"연세대학교 로고"}
-                width={100}
-                height={100}
-              />
-              <p className={"text-lg lg:text-2xl font-semibold p-4"}>
-                연세대학교
-                <br /> 학생부종합전형 <br />
-                (국제형)
-              </p>
-            </AdmissionButton>
-            <AdmissionButton href={"/yonsei-talent-international-final"}>
-              <Image
-                src={"/yonsei.svg"}
-                alt={"연세대학교 로고"}
-                width={100}
-                height={100}
-              />
-              <p className={"text-lg lg:text-2xl font-semibold p-4"}>
-                연세대학교
-                <br /> 특기자[국제인재] UD
-                <br />
-                최종합격자 발표
-              </p>
-            </AdmissionButton>
-            <AdmissionButton href={"/korea-gaejuck-final"}>
-              <Image
-                src={"/korea.svg"}
-                alt={"고려대학교 로고"}
-                width={80}
-                height={80}
-              />
-              <p className={"text-lg lg:text-2xl font-semibold p-4"}>
-                고려대학교 <br />
-                계열적합, 고른기회, 재직자전형
-              </p>
-            </AdmissionButton>
-            <AdmissionButton href={"/cau-tamgu-1st"}>
-              <Image
-                src={"/cau.svg"}
-                alt={"중앙대학교 로고"}
-                width={100}
-                height={100}
-              />
-              <p className={"text-lg lg:text-2xl font-semibold p-4"}>
-                중앙대학교 <br />
-                학생부종합전형[탐구형]
+                수시 최종합격자
               </p>
             </AdmissionButton>
             <Link

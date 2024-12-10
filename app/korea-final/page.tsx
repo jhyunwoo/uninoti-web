@@ -6,11 +6,11 @@ import AdmissionState from "@/app/components/status"
 import DDay from "@/app/components/d-day"
 
 export const metadata: Metadata = {
-  title: "서강대 수시 최종합격자 발표 상태",
-  description: "서강대학교 수시 최초합격자 발표 상태",
+  title: "고려대 수시 최종합격자 발표 상태",
+  description: "고려대학교 수시 최종합격자 발표 상태",
 }
 
-export default function SogangFinal() {
+export default function KoreaFinal() {
   return (
     <div
       className={"w-screen min-h-screen flex items-center justify-center p-4"}
@@ -29,21 +29,23 @@ export default function SogangFinal() {
 
         <div className={"flex items-center gap-4"}>
           <Image
-            src={"/sogang.svg"}
-            alt={"서강대학교 로고"}
+            src={"/korea.svg"}
+            alt={"고려대학교 로고"}
             width={80}
             height={80}
           />
           <div className={"text-lg lg:text-xl font-bold"}>
-            서강대학교
-            <br /> 수시
-            <br /> 최종합격자 발표
+            고려대학교 <br /> 수시
+            <br />
+            최종 합격자 발표
           </div>
         </div>
         <AdmissionState
-          api={"https://api.uninoti.moveto.kr/sogang-final"}
-          title={"서강대학교 입학처 바로가기"}
-          link={"https://admission.sogang.ac.kr/enter/html/counsel/notice.asp"}
+          api={"https://api.uninoti.moveto.kr/korea-final"}
+          title={"고려대학교 입학처 바로가기"}
+          link={
+            "https://oku.korea.ac.kr/oku/cms/FR_CON/index.do?MENU_ID=750&CONTENTS_NO=1"
+          }
         />
       </div>
     </div>
