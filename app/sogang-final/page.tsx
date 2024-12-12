@@ -38,7 +38,7 @@ export default function SogangFinal() {
         <AdmissionState
           api={"https://api.uninoti.moveto.kr/sogang-final"}
           title={"서강대학교 입학처 바로가기"}
-          link={"https://admission.sogang.ac.kr/enter/html/counsel/notice.asp"}
+          link={"https://admission2.sogang.ac.kr/enter/html/main/index.asp"}
         />
       </div>
     </div>
