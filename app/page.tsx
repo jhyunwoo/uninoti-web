@@ -1,7 +1,11 @@
 import Link from "next/link"
-import Image from "next/image"
 import { ReactNode } from "react"
 import { ChevronRightIcon } from "@heroicons/react/24/outline"
+import SNU from "@/public/snu.svg"
+import Yonsei from "@/public/yonsei.svg"
+import Korea from "@/public/korea.svg"
+import Hanyang from "@/public/hanyang.svg"
+import Sogang from "@/public/sogang.svg"
 
 function AdmissionButton({
   href,
@@ -57,60 +61,35 @@ export default function HomePage() {
           </div>
           <div className={"grid grid-cols-1 md:grid-cols-2 gap-4 w-full"}>
             <AdmissionButton href={"/snu-final"}>
-              <Image
-                src={"/snu.svg"}
-                alt={"서울대학교 로고"}
-                width={100}
-                height={100}
-              />
+              <SNU className={"size-24"} />
               <p className={"text-lg lg:text-2xl font-semibold p-4"}>
                 서울대학교 <br />
                 수시 최종합격자
               </p>
             </AdmissionButton>
             <AdmissionButton href={"/yonsei-final"}>
-              <Image
-                src={"/yonsei.svg"}
-                alt={"연세대학교 로고"}
-                width={100}
-                height={100}
-              />
+              <Yonsei className={"size-24"} />
               <p className={"text-lg lg:text-2xl font-semibold p-4"}>
                 연세대학교 <br />
                 수시 최종합격자
               </p>
             </AdmissionButton>
             <AdmissionButton href={"/korea-final"}>
-              <Image
-                src={"/korea.svg"}
-                alt={"고려대학교 로고"}
-                width={80}
-                height={80}
-              />
+              <Korea className={"size-24"} />
               <p className={"text-lg lg:text-2xl font-semibold p-4"}>
                 고려대학교 <br />
                 수시 최종합격자
               </p>
             </AdmissionButton>
             <AdmissionButton href={"/hanyang-final"}>
-              <Image
-                src={"/hanyang.svg"}
-                alt={"한양대학교 로고"}
-                width={100}
-                height={100}
-              />
+              <Hanyang className={"size-24"} />
               <p className={"text-lg lg:text-2xl font-semibold p-4"}>
                 한양대학교 <br />
                 수시 최종합격자
               </p>
             </AdmissionButton>
             <AdmissionButton href={"/sogang-final"}>
-              <Image
-                src={"/sogang.svg"}
-                alt={"서강대학교 로고"}
-                width={100}
-                height={100}
-              />
+              <Sogang className={"size-24"} />
               <p className={"text-lg lg:text-2xl font-semibold p-4"}>
                 서강대학교 <br />
                 수시 최종합격자

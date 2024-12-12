@@ -1,9 +1,9 @@
-import Image from "next/image"
 import { Metadata } from "next"
 import Link from "next/link"
 import { ChevronLeftIcon } from "@heroicons/react/24/outline"
 import AdmissionState from "@/app/components/status"
 import DDay from "@/app/components/d-day"
+import Hanyang from "@/public/hanyang.svg"
 
 export const metadata: Metadata = {
   title: "한양대 수시 최종합격자 발표 상태",
@@ -28,12 +28,7 @@ export default function HanyangFinal() {
         <DDay year={2024} month={12} day={13} />
 
         <div className={"flex items-center gap-4"}>
-          <Image
-            src={"/hanyang.svg"}
-            alt={"한양대학교 로고"}
-            width={80}
-            height={80}
-          />
+          <Hanyang className={"size-24"} />
           <div className={"text-lg lg:text-xl font-bold"}>
             한양대학교
             <br /> 수시

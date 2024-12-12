@@ -1,9 +1,9 @@
-import Image from "next/image"
 import { Metadata } from "next"
 import Link from "next/link"
 import { ChevronLeftIcon } from "@heroicons/react/24/outline"
 import AdmissionState from "@/app/components/status"
 import DDay from "@/app/components/d-day"
+import SNU from "@/public/snu.svg"
 
 export const metadata: Metadata = {
   title: "서울대 수시 최종 발표 상태",
@@ -27,12 +27,7 @@ export default function SnuFinal() {
       <div className={"admission-card"}>
         <DDay year={2024} month={12} day={13} />
         <div className={"flex items-center gap-4"}>
-          <Image
-            src={"/snu.svg"}
-            alt={"서울대학교 로고"}
-            width={100}
-            height={100}
-          />
+          <SNU className={"size-24"} />
           <div className={"text-xl lg:text-2xl font-bold"}>
             서울대학교 수시
             <br />
