@@ -29,7 +29,7 @@ export default function HanyangFinal() {
 
         <div className={"flex items-center gap-4"}>
           <Hanyang className={"size-24"} />
-          <div className={"text-lg lg:text-xl font-bold"}>
+          <div className={"text-xl lg:text-2xl font-bold"}>
             한양대학교
             <br /> 수시
             <br /> 최종합격자 발표
