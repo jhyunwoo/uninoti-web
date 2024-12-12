@@ -29,7 +29,8 @@ export default function SnuFinal() {
         <div className={"flex items-center gap-4"}>
           <SNU className={"size-24"} />
           <div className={"text-xl lg:text-2xl font-bold"}>
-            서울대학교 수시
+            서울대학교
+            <br /> 수시
             <br />
             최종 합격자 발표
           </div>
